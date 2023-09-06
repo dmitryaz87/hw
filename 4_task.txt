@@ -1,0 +1,9 @@
+SELECT s.dname, s.state, u.email
+FROM services s
+LEFT JOIN users u ON u.user_id = s.user_id
+WHERE s.servtype = 'domain' and u.user_id = **** and s.state IN ('A','S')
+
+SELECT d.dname
+FROM domains d
+LEFT JOIN users u ON u.user_id = d.user_id 
+WHERE u.name = 'Иван Иванов'
