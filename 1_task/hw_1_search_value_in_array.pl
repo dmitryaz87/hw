@@ -12,6 +12,8 @@ foreach my $i (@unsorted){
 
 my $len = @unsorted;
 
+my $k;
+
 #искомое значение вводим с клавиатуры
 my $key = shift;
 	
